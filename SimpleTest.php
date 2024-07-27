@@ -3,7 +3,7 @@
 // to get the curl one-liner to run in this directory), then run:
 //     vendor/bin/phpunit SimpleTest.php
 
-require_once "vendor/autoload.php";
+use "vendor/autoload.php";
 define("APP_PATH", realpath(dirname(__FILE__).'/../../apps/TestApp/build/release-iphonesimulator/TestApp-iphonesimulator.app'));
 if (!APP_PATH) {
     die("App did not exist!");
